@@ -1,0 +1,84 @@
+---
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<style>
+@import "../styles/global.css";
+</style>
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Monica Faria Caires - Full Stack Developer Portfolio" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		
+		
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+			integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+			crossorigin="anonymous" referrerpolicy="no-referrer" />
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style is:global>
+	.no-scrollbar {
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
+	}
+
+	.writing-vertical {
+		writing-mode: vertical-lr;
+	}
+
+	html {
+		scroll-behavior: smooth;
+	}
+
+	body {
+		margin: 0;
+		padding: 0;
+	}
+
+	::selection {
+		background-color: rgb(167 139 250); /* violet-400 */
+		color: white;
+	}
+
+	.highlight {
+		font-weight: 500;
+		color: rgb(167 139 250); /* violet-400 */
+	}
+
+	#marie-kondo {
+		cursor: url("/assets/marie-kondo.png"), pointer;
+	}
+
+	#name,
+	.highlight:hover {
+		background: linear-gradient(135deg, rgb(139 92 246) 0%, rgb(196 181 253) 25%, rgb(237 233 254) 50%, rgb(196 181 253) 75%, rgb(139 92 246) 100%);
+		background-size: 400%;
+		animation: animate 10s linear infinite;
+		
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		color: transparent; /* Fallback for non-webkit browsers */
+	}
+
+	@keyframes animate {
+		100% {
+			background-position: 400%;
+		}
+	}
+</style>

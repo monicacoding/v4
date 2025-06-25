@@ -1,16 +1,42 @@
 ---
-
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import About from '../components/About.astro';
+import Projects from '../components/Projects.astro';
+import Experience from '../components/Experience.astro';
+import Contact from '../components/Contact.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Monica Faria Caires">
+	<!-- Root -->
+	<div class="bg-zinc-900 text-zinc-50 min-h-screen">
+		<!-- Mobile and Tablet Layout -->
+		<div class="lg:hidden">
+			<Header />
+			<main class="px-6 sm:px-8 md:px-12 space-y-20 sm:space-y-24 md:space-y-32 pb-20 sm:pb-24 md:pb-32">
+				<About />
+				<Projects />
+				<Experience />
+				<Contact />
+			</main>
+		</div>
+		
+		<!-- Desktop Layout -->
+		<div class="hidden lg:flex lg:min-h-screen lg:max-w-7xl xl:max-w-[1400px] lg:mx-auto lg:px-8 xl:px-12 2xl:px-16">
+			<!-- Fixed Header Section -->
+			<div class="lg:w-6/12 xl:w-3/6 lg:sticky lg:top-0 lg:h-screen lg:overflow-y-auto lg:flex lg:flex-col lg:justify-start py-24">
+				<Header />
+			</div>
+			
+			<!-- Scrollable Main Section -->
+			<div class="lg:w-7/12 xl:w-3/5 lg:overflow-y-auto">
+				<main class="px-8 xl:px-12 2xl:px-16 space-y-32 xl:space-y-40 py-20 xl:py-24">
+					<About />
+					<Projects />
+					<Experience />
+					<Contact />
+				</main>
+			</div>
+		</div>
+	</div>
+</Layout>
