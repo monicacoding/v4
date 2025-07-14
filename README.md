@@ -1,47 +1,41 @@
-# Astro Starter Kit: Minimal
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=600&size=36&letterSpacing=0.2rem&duration=1500&pause=2000&color=8075FF&vCenter=true&width=435&lines=Hello+world%2C;I'm+Monica!+%F0%9F%91%8B" alt="Typing SVG" /></a>
 
-```sh
-npm create astro@latest -- --template minimal
-```
+**`Front End Developer`**
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+I have a passion for turning complex ideas into sleek, user-friendly experiences — *think of me as a digital Marie Kondo, but with code*. I'm eager to bring this efficiency and creativity to dynamic projects, while continuously honing my skills in building scalable, responsive web applications that shine in both form and function. <br/>
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+---
 
-## 🚀 Project Structure
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=600&letterSpacing=0.2rem&duration=1000&pause=5000&color=8075FF&vCenter=true&repeat=false&width=435&lines=Git+In+Touch" alt="Typing SVG" /></a> <br/>
+- Creating and meddling with ideas in [Codepen](https://codepen.io/monicacoding). <br/>
+- Sharing thoughts and insights on [Medium](https://medium.com/@monicacoding). <br/>
+- Always reachable via [LinkedIn](https://www.linkedin.com/in/monicafariacaires/) or hello@monicacoding.dev. <br/>
+<br/>
 
-Inside of your Astro project, you'll see the following folders and files:
+---
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=600&letterSpacing=0.2rem&duration=1000&pause=5000&color=8075FF&vCenter=true&repeat=false&width=435&lines=Tech+Stack" alt="Typing SVG" /></a><br/>
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![Astro](https://img.shields.io/badge/astro-%232C2052.svg?style=for-the-badge&logo=astro&logoColor=white)
+<br/>
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+---
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=600&letterSpacing=0.2rem&duration=1000&pause=5000&color=8075FF&vCenter=true&repeat=false&width=435&lines=Blog+Posts" alt="Typing SVG" /></a><br/>
 
-Any static assets, like images, can be placed in the `public/` directory.
+- [The Future of Software Development: Embracing AI's Role](https://monicacoding.medium.com/the-future-of-software-development-embracing-ais-role-58971da6847c)
+- [Cursor AI: A New Frontier in Code Development](https://monicacoding.medium.com/cursor-ai-a-new-frontier-in-code-development-2a6dd39138f8)
+- [The Top 5 Programming Languages to Learn in 2024](https://monicacoding.medium.com/the-top-5-programming-languages-to-learn-in-2024-dcfe95c3ecf5)
+- [“8 Rules of Love” by Jay Shetty: Your New Workplace Survival Guide](https://medium.com/@monicacoding/8-rules-of-love-by-jay-shetty-your-new-workplace-survival-guide-14e636b13736)
+<br/>
 
-## 🧞 Commands
+---
 
-All commands are run from the root of the project, from a terminal:
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=600&letterSpacing=0.2rem&duration=1000&pause=5000&color=8075FF&vCenter=true&repeat=false&width=435&lines=GitHub+Stats" alt="Typing SVG" /></a><br/>
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+<div align="left">
+  <img src="https://github-readme-stats.vercel.app/api?username=monicacoding&hide_title=true&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false&order=1" height="150" alt="stats graph"  />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=monicacoding&locale=en&hide_title=true&layout=compact&card_width=320&langs_count=8&theme=dracula&hide_border=false&order=2" height="150" alt="languages graph"  />
+</div>
+<br/>
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+---
