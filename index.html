@@ -22,23 +22,23 @@
     
   </head>
 
-  <body class="w-full min-h-screen flex flex-col justify-start items-center flex-nowrap">
-    <div class="relative w-full max-w-2xl min-h-screen flex flex-col justify-start items-start gap-10 py-10 px-6 md:px-8 mt-16 md:mt-20">
+  <body class="w-full min-h-screen flex flex-col items-center">
+    <div class="w-full max-w-2xl min-h-screen flex flex-col items-start gap-10 py-10 px-6 md:px-8 mt-16 md:mt-20">
 
       <!-- Header Section -->
-      <header class="relative w-full max-w-lg h-auto flex flex-col justify-start items-start flex-nowrap gap-12 md:gap-10 p-0">
+      <header class="w-full max-w-lg flex flex-col items-start gap-12 md:gap-10">
         <!-- Header Logo Section -->
-        <div id="headerLogoSection" class="relative w-full max-w-[1fr] h-auto flex flex-row justify-start items-start gap-4">
+        <div id="headerLogoSection" class="w-full flex items-start gap-4">
           <div id="headerLogoContainer">
-            <img src="./public/profile-pic.png" alt="" class="relative w-[100px] h-[100px]" style="width: 100px; height: 100px; max-width: 100px; max-height: 100px; object-fit: cover; display: block;"/>
+            <img src="./public/profile-pic.png" alt="Monica Caires profile picture" class="profile-picture" />
           </div>
         </div>
 
         <!-- Header Text Section -->
-        <div id="headerTextSection" class="relative w-full max-w-[1fr] h-auto flex flex-col justify-center items-start flex-nowrap">
-          <div id="headerTextContainer" class="relative w-full max-w-[1fr] h-auto flex flex-col justify-center items-start flex-nowrap gap-3">
-            <h1 class="text-2xl font-medium" data-i18n="hero.title">Hey, I'm <span id="nameHero" class="highlight">Monica Caires</span>.</h1>
-            <p class="text-xl font-normal text-zinc-600" data-i18n="hero.subtitle">
+        <div id="headerTextSection" class="w-full flex flex-col items-start">
+          <div id="headerTextContainer" class="w-full flex flex-col items-start gap-3">
+            <h1 class="text-2xl font-medium">Hey, I'm <span id="nameHero" class="highlight">Monica Caires</span>.</h1>
+            <p class="text-xl font-normal text-zinc-600">
               <span class="highlight">Full-Stack Developer</span>, turning complex ideas into sleek, user-friendly experiences — think of me as a digital <span id="marie-kondo" class="highlight">Marie Kondo</span>, but with code.
             </p>
           </div>
@@ -74,33 +74,23 @@
       </header>
 
       <!-- Main Section -->
-      <main class="relative w-full max-w-[700px] h-auto flex flex-col justify-center items-center flex-nowrap gap-8">
+      <main class="w-full max-w-[700px] flex flex-col items-center gap-8">
         <!-- Main Nav Section -->
-        <div class="nav-bar-row relative w-full max-w-[1fr] flex items-center justify-between gap-3">
-          <div class="nav-wrapper relative flex-1">
+        <div class="nav-bar-row w-full flex items-center justify-between gap-3">
+          <div class="nav-wrapper flex-1">
             <button id="navToggle" class="nav-toggle md:hidden" aria-label="Toggle navigation menu">
-              <span id="navToggleLabel" data-i18n="nav.menu">About</span>
+              <span id="navToggleLabel">About</span>
               <i class="fa-solid fa-chevron-down"></i>
             </button>
-            <nav class="relative w-full h-auto flex flex-row justify-start items-center flex-nowrap gap-2">
-              <a href="#about" data-i18n="nav.about" class="nav-link relative w-auto h-[28px] flex flex-row justify-center items-center flex-nowrap px-5 py-3 text-[15px] text-zinc-600 hover:bg-black hover:text-white hover:rounded-full transition-all">
-                About
-              </a>
-              <a href="#projects" data-i18n="nav.projects" class="nav-link relative w-auto h-[28px] flex flex-row justify-center items-center flex-nowrap px-5 py-3 text-[15px] text-zinc-600 hover:bg-black hover:text-white hover:rounded-full transition-all">
-                Projects
-              </a>
-              <a href="#experience" data-i18n="nav.experience" class="nav-link relative w-auto h-[28px] flex flex-row justify-center items-center flex-nowrap px-5 py-3 text-[15px] text-zinc-600 hover:bg-black hover:text-white hover:rounded-full transition-all">
-                Experience
-              </a>
-              <a href="#education" data-i18n="nav.education" class="nav-link relative w-auto h-[28px] flex flex-row justify-center items-center flex-nowrap px-5 py-3 text-[15px] text-zinc-600 hover:bg-black hover:text-white hover:rounded-full transition-all">
-                Education
-              </a>
-              <a href="#contact" data-i18n="nav.contact" class="nav-link relative w-auto h-[28px] flex flex-row justify-center items-center flex-nowrap px-5 py-3 text-[15px] text-zinc-600 hover:bg-black hover:text-white hover:rounded-full transition-all">
-                Git In Touch
-              </a>
+            <nav class="w-full flex items-center gap-2">
+              <a href="#about" class="nav-link">About</a>
+              <a href="#projects" class="nav-link">Projects</a>
+              <a href="#experience" class="nav-link">Experience</a>
+              <a href="#education" class="nav-link">Education</a>
+              <a href="#contact" class="nav-link">Git In Touch</a>
             </nav>
           </div>
-          <div class="relative theme-selector-container">
+          <div class="theme-selector-container">
             <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle theme menu">
               <i class="fa-solid fa-moon"></i>
             </button>
@@ -126,21 +116,21 @@
         </div>
         
         <!-- Main Content Section -->
-        <div id="app" class="relative w-full max-w-[1fr] h-auto flex flex-col justify-start items-start flex-nowrap gap-8">
+        <div id="app" class="w-full flex flex-col items-start gap-8">
           
           <!-- About Section -->
           <section id="about" class="content-section w-full">
             <div class="flex flex-col gap-6">
-              <p class="text-base leading-relaxed" data-i18n="about.p1">
+              <p class="text-base leading-relaxed">
                 I craft responsive, user-focused web apps using <span class="highlight">JavaScript</span>, <span class="highlight">React</span>, <span class="highlight">Next.js</span>, <span class="highlight">Node.js</span>, <span class="highlight">Express</span>, and <span class="highlight">TailwindCSS</span>, always aiming for clean architecture, accessibility, and smooth user experiences.
               </p>
-              <p class="text-base leading-relaxed" data-i18n="about.p3">
-                Off the clock, I’m either running trails, reading, playing tennis, or trying to code while my pets provide “unexpected input” on my projects.
+              <p class="text-base leading-relaxed">
+                Off the clock, I'm either running trails, reading, playing tennis, or trying to code while my pets provide "unexpected input" on my projects.
               </p>
               
               <!-- Tech Stack Section -->
               <div class="mt-4">
-                <h2 class="text-lg font-semibold mb-4" data-i18n="about.techTitle">Tech Stack</h2>
+                <h2 class="text-lg font-semibold mb-4">Tech Stack</h2>
                 <div class="tech-stack-container">
                   <div class="tech-stack-scroll">
                     <div class="tech-item" data-tech="html">
@@ -197,7 +187,7 @@
                 </div>
                 <div class="project-content">
                   <div class="project-header">
-                    <h3 class="project-title" data-i18n="projects.gitpeek.title">GitPeek</h3>
+                    <h3 class="project-title">GitPeek</h3>
                     <div class="project-links">
                       <a href="https://github.com/monicacoding/git-peek" target="_blank" aria-label="View GitHub repository">
                         <i class="fab fa-github"></i>
@@ -208,12 +198,12 @@
                     </div>
                   </div>
                   <div class="project-tags">
-                  <span class="project-tag" data-i18n="projects.gitpeek.tag.html">HTML</span>
-                  <span class="project-tag" data-i18n="projects.gitpeek.tag.css">CSS</span>
-                  <span class="project-tag" data-i18n="projects.gitpeek.tag.js">JavaScript</span>
-                  <span class="project-tag" data-i18n="projects.gitpeek.tag.api">GitHub API</span>
+                  <span class="project-tag">HTML</span>
+                  <span class="project-tag">CSS</span>
+                  <span class="project-tag">JavaScript</span>
+                  <span class="project-tag">GitHub API</span>
                   </div>
-                  <p class="project-description" data-i18n="projects.gitpeek.description">
+                  <p class="project-description">
                     Web application for quickly visualizing GitHub user profiles and repositories.
                   </p>
                 </div>
@@ -226,7 +216,7 @@
                 </div>
                 <div class="project-content">
                   <div class="project-header">
-                    <h3 class="project-title" data-i18n="projects.tts.title">Text to Speech</h3>
+                    <h3 class="project-title">Text to Speech</h3>
                     <div class="project-links">
                       <a href="https://github.com/monicacoding/text-to-speech" target="_blank" aria-label="View GitHub repository">
                         <i class="fab fa-github"></i>
@@ -237,12 +227,12 @@
                     </div>
                   </div>
                   <div class="project-tags">
-                  <span class="project-tag" data-i18n="projects.tts.tag.html">HTML</span>
-                  <span class="project-tag" data-i18n="projects.tts.tag.css">CSS</span>
-                  <span class="project-tag" data-i18n="projects.tts.tag.js">JavaScript</span>
-                  <span class="project-tag" data-i18n="projects.tts.tag.api">Speech Synthesis API</span>
+                  <span class="project-tag">HTML</span>
+                  <span class="project-tag">CSS</span>
+                  <span class="project-tag">JavaScript</span>
+                  <span class="project-tag">Speech Synthesis API</span>
                   </div>
-                  <p class="project-description" data-i18n="projects.tts.description">
+                  <p class="project-description">
                     Converts user-inputted text into spoken words using the browser's built-in Speech Synthesis API.
                   </p>
                 </div>
@@ -268,16 +258,16 @@
               <div class="experience-item">
                 <div class="experience-header">
                   <div class="experience-title-section">
-                    <h3 class="experience-title" data-i18n="experience.item1.title">Project Management Office Analyst</h3>
-                    <p class="experience-company" data-i18n="experience.item1.company">Teleperformance Portugal SA</p>
+                    <h3 class="experience-title">Project Management Office Analyst</h3>
+                    <p class="experience-company">Teleperformance Portugal SA</p>
                   </div>
                   <div class="experience-meta">
-                    <p class="experience-date" data-i18n="experience.item1.date">January 2025 — Present</p>
-                    <p class="experience-location" data-i18n="experience.item1.location">Lisbon, Portugal</p>
+                    <p class="experience-date">January 2025 — Present</p>
+                    <p class="experience-location">Lisbon, Portugal</p>
                   </div>
                 </div>
-                <p class="experience-description" data-i18n="experience.item1.description">
-                  Part of Microsoft’s Partners Process Excellence team, supporting project tracking, risk identification, and process improvements. Manage workflows, coordinate communication, and introduce efficiency initiatives. Contribute to AI-driven process automation through Copilot Studio. Produce analysis and reporting to guide data-driven decision-making and ensure successful project delivery.
+                <p class="experience-description">
+                  Part of Microsoft's Partners Process Excellence team, supporting project tracking, risk identification, and process improvements. Manage workflows, coordinate communication, and introduce efficiency initiatives. Contribute to AI-driven process automation through Copilot Studio. Produce analysis and reporting to guide data-driven decision-making and ensure successful project delivery.
                 </p>
                 <div class="experience-tags">
                   <span class="experience-tag">Project Management</span>
@@ -294,16 +284,16 @@
               <div class="experience-item">
                 <div class="experience-header">
                   <div class="experience-title-section">
-                    <h3 class="experience-title" data-i18n="experience.item2.title">Operational Trainer</h3>
-                    <p class="experience-company" data-i18n="experience.item2.company">Teleperformance Portugal SA</p>
+                    <h3 class="experience-title">Operational Trainer</h3>
+                    <p class="experience-company">Teleperformance Portugal SA</p>
                   </div>
                   <div class="experience-meta">
-                    <p class="experience-date" data-i18n="experience.item2.date">May 2021 — January 2025</p>
-                    <p class="experience-location" data-i18n="experience.item2.location">Lisbon, Portugal</p>
+                    <p class="experience-date">May 2021 — January 2025</p>
+                    <p class="experience-location">Lisbon, Portugal</p>
                   </div>
                 </div>
-                <p class="experience-description" data-i18n="experience.item2.description">
-                  Deliver training and create learning materials for Microsoft’s Partners training department. Leverage SAP SuccessFactors, Microsoft Excel, and Power BI to track and report performance data. Support team operations and serve as backup Training Manager, collaborating closely with leadership and high-level stakeholders.
+                <p class="experience-description">
+                  Deliver training and create learning materials for Microsoft's Partners training department. Leverage SAP SuccessFactors, Microsoft Excel, and Power BI to track and report performance data. Support team operations and serve as backup Training Manager, collaborating closely with leadership and high-level stakeholders.
                 </p>
                 <div class="experience-tags">
                   <span class="experience-tag">Training Delivery</span>
@@ -318,15 +308,15 @@
               <div class="experience-item">
                 <div class="experience-header">
                   <div class="experience-title-section">
-                    <h3 class="experience-title" data-i18n="experience.item3.title">Operations Customer Expert</h3>
-                    <p class="experience-company" data-i18n="experience.item3.company">Teleperformance Portugal SA</p>
+                    <h3 class="experience-title">Operations Customer Expert</h3>
+                    <p class="experience-company">Teleperformance Portugal SA</p>
                   </div>
                   <div class="experience-meta">
-                    <p class="experience-date" data-i18n="experience.item3.date">July 2019 — May 2021</p>
-                    <p class="experience-location" data-i18n="experience.item3.location">Lisbon, Portugal</p>
+                    <p class="experience-date">July 2019 — May 2021</p>
+                    <p class="experience-location">Lisbon, Portugal</p>
                   </div>
                 </div>
-                <p class="experience-description" data-i18n="experience.item3.description">
+                <p class="experience-description">
                   Provide high-quality customer support, resolving issues, maintaining client satisfaction, and assisting with service-related processes. Support project management tasks and help maintain team efficiency and morale.
                 </p>
                 <div class="experience-tags">
@@ -351,7 +341,7 @@
                 </div>
                 <div class="course-content">
                   <div class="course-header">
-                    <h3 class="course-title" data-i18n="education.course1.title">CS50x: Introduction to Computer Science</h3>
+                    <h3 class="course-title">CS50x: Introduction to Computer Science</h3>
                     <!--
                     <a href="#" target="_blank" aria-label="View certificate" class="course-link">
                       <i class="fa-solid fa-award"></i>
@@ -361,8 +351,8 @@
                     </a>
                     -->
                   </div>
-                  <p class="course-provider" data-i18n="education.course1.provider">Harvard University</p>
-                  <p class="course-description" data-i18n="education.course1.description">
+                  <p class="course-provider">Harvard University</p>
+                  <p class="course-description">
                     Harvard's rigorous introduction to computer science focused on algorithms, data structures, and core programming principles. Built multiple hands-on projects that strengthened problem-solving, computational thinking, and writing efficient code.
                   </p>
                   <div class="course-tags">
@@ -386,7 +376,7 @@
                 </div>
                 <div class="course-content">
                   <div class="course-header">
-                    <h3 class="course-title" data-i18n="education.course2.title">Fullstack Developer Path</h3>
+                    <h3 class="course-title">Fullstack Developer Path</h3>
                     <!--
                     <a href="#" target="_blank" aria-label="View certificate" class="course-link">
                       <i class="fa-solid fa-award"></i>
@@ -396,8 +386,8 @@
                     </a>
                     -->
                   </div>
-                  <p class="course-provider" data-i18n="education.course2.provider">Scrimba</p>
-                  <p class="course-description" data-i18n="education.course2.description">
+                  <p class="course-provider">Scrimba</p>
+                  <p class="course-description">
                     Project-based full-stack program covering modern frontend and backend development. Developed real-world applications with JavaScript, React, and Node.js while learning UI best practices, state management, and API development.
                   </p>
                   <div class="course-tags">
@@ -422,7 +412,7 @@
                 </div>
                 <div class="course-content">
                   <div class="course-header">
-                    <h3 class="course-title" data-i18n="education.course3.title">The Complete Web Developer in 2025</h3>
+                    <h3 class="course-title">The Complete Web Developer in 2025</h3>
                     <a href="./public/assets/certifications/the-complete-web-developer-zero-to-mastery.pdf" target="_blank" aria-label="View certificate" class="course-link">
                       <i class="fa-solid fa-award"></i>
                       <div class="course-certificate-tooltip">
@@ -430,8 +420,8 @@
                       </div>
                     </a>
                   </div>
-                  <p class="course-provider" data-i18n="education.course3.provider">Zero to Mastery</p>
-                  <p class="course-description" data-i18n="education.course3.description">
+                  <p class="course-provider">Zero to Mastery</p>
+                  <p class="course-description">
                     Full-stack bootcamp focused on building production-ready applications. Gained experience creating interactive UIs, backend logic, and database-driven features using modern web technologies and workflows.
                   </p>
                   <div class="course-tags">
