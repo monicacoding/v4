@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monica Faria Caires</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Devicon -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+    <!-- CSS -->
+     <link rel="stylesheet" href=".src/style.css">
+  </head>
+
+  <body class="w-full min-h-screen flex flex-col justify-start items-center flex-nowrap">
+    <div class="relative w-full max-w-2xl min-h-screen flex flex-col justify-start items-start gap-10 py-10 px-6 md:px-8 mt-16 md:mt-20">
+
+      <!-- Header Section -->
+      <header class="relative w-full max-w-lg h-auto flex flex-col justify-start items-start flex-nowrap gap-12 md:gap-10 p-0">
+        <!-- Header Logo Section -->
+        <div id="headerLogoSection" class="relative w-full max-w-[1fr] h-auto flex flex-row justify-start items-start gap-4">
+          <div id="headerLogoContainer">
+            <img src="./public/profile-pic.png" alt="" class="relative w-[100px] h-[100px]"/>
+          </div>
+        </div>
+
+        <!-- Header Text Section -->
+        <div id="headerTextSection" class="relative w-full max-w-[1fr] h-auto flex flex-col justify-center items-start flex-nowrap">
+          <div id="headerTextContainer" class="relative w-full max-w-[1fr] h-auto flex flex-col justify-center items-start flex-nowrap gap-3">
+            <h1 class="text-2xl font-medium" data-i18n="hero.title">Hey, I'm <span id="nameHero" class="highlight">Monica Caires</span>.</h1>
+            <p class="text-xl font-normal text-zinc-600" data-i18n="hero.subtitle">
+              <span class="highlight">Full-Stack Developer</span>, turning complex ideas into sleek, user-friendly experiences — think of me as a digital <span id="marie-kondo" class="highlight">Marie Kondo</span>, but with code.
+            </p>
+          </div>
+          <div id="headerSocialLinksContainer" class="flex items-center mt-4 mb-3 text-2xl gap-5">
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/in/monicafariacaires/" class="social-link" data-social="LinkedIn" target="_blank">
+                  <i class="fa-brands fa-linkedin text-zinc-500 hover:text-black transition-colors"></i>
+              </a>
+      
+              <!-- GitHub -->
+              <a href="https://github.com/monicacoding" class="social-link" data-social="GitHub" target="_blank">
+                  <i class="fa-brands fa-github text-zinc-500 hover:text-black transition-colors"></i>
+              </a>
+
+              <!-- Medium -->
+              <a href="https://monicacoding.medium.com/" class="social-link" data-social="Medium" target="_blank">
+                  <i class="fa-brands fa-medium text-zinc-500 hover:text-black transition-colors"></i>
+              </a>
+
+              <!-- Email -->
+              <a href="mailto:hello@monicacoding.dev" class="social-link" data-social="Email" target="_blank">
+                <i class="fa-solid fa-paper-plane text-xl text-zinc-500 hover:text-black transition-colors"></i>
+            </a>
+
+            <!-- Resume -->
+            <a href="./public/assets/resume.pdf" class="social-link" data-social="Resume" target="_blank">
+              <i class="fa-solid fa-download text-zinc-500 hover:text-black transition-colors"></i>
+          </a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main Section -->
+      <main class="relative w-full max-w-[700px] h-auto flex flex-col justify-center items-center flex-nowrap gap-8">
+        <!-- Main Nav Section -->
+        <div class="nav-bar-row relative w-full max-w-[1fr] flex items-center justify-between gap-3">
+          <div class="nav-wrapper relative flex-1">
+            <button id="navToggle" class="nav-toggle md:hidden" aria-label="Toggle navigation menu">
+              <span id="navToggleLabel" data-i18n="nav.menu">About</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <nav class="relative w-full h-auto flex flex-row justify-start items-center flex-nowrap gap-2">
+              <a href="#about" data-i18n="nav.about" class="nav-link relative w-auto h-[28px] flex flex-row justify-center items-center flex-nowrap px-5 py-3 text-[15px] text-zinc-600 hover:bg-black hover:text-white hover:rounded-full transition-all">
+                About
+              </a>
+              <a href="#projects" data-i18n="nav.projects" class="nav-link relative w-auto h-[28px] flex flex-row justify-center items-center flex-nowrap px-5 py-3 text-[15px] text-zinc-600 hover:bg-black hover:text-white hover:rounded-full transition-all">
+                Projects
+              </a>
+              <a href="#experience" data-i18n="nav.experience" class="nav-link relative w-auto h-[28px] flex flex-row justify-center items-center flex-nowrap px-5 py-3 text-[15px] text-zinc-600 hover:bg-black hover:text-white hover:rounded-full transition-all">
+                Experience
+              </a>
+              <a href="#education" data-i18n="nav.education" class="nav-link relative w-auto h-[28px] flex flex-row justify-center items-center flex-nowrap px-5 py-3 text-[15px] text-zinc-600 hover:bg-black hover:text-white hover:rounded-full transition-all">
+                Education
+              </a>
+              <a href="#contact" data-i18n="nav.contact" class="nav-link relative w-auto h-[28px] flex flex-row justify-center items-center flex-nowrap px-5 py-3 text-[15px] text-zinc-600 hover:bg-black hover:text-white hover:rounded-full transition-all">
+                Git In Touch
+              </a>
+            </nav>
+          </div>
+          <div class="relative theme-selector-container">
+            <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle theme menu">
+              <i class="fa-solid fa-moon"></i>
+            </button>
+            <div id="themeMenu" class="theme-menu hidden">
+              <button class="theme-option" data-theme="light">
+                <i class="fa-solid fa-sun"></i>
+                <span>Light Mode</span>
+              </button>
+              <button class="theme-option" data-theme="dark">
+                <i class="fa-solid fa-moon"></i>
+                <span>Dark Mode</span>
+              </button>
+              <button class="theme-option" data-theme="night-owl">
+                <i class="fa-solid fa-cloud-moon"></i>
+                <span>Night Owl</span>
+              </button>
+              <button class="theme-option" data-theme="high-contrast">
+                <i class="fa-solid fa-circle-half-stroke"></i>
+                <span>High Contrast</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Main Content Section -->
+        <div id="app" class="relative w-full max-w-[1fr] h-auto flex flex-col justify-start items-start flex-nowrap gap-8">
+          
+          <!-- About Section -->
+          <section id="about" class="content-section w-full">
+            <div class="flex flex-col gap-6">
+              <p class="text-base leading-relaxed" data-i18n="about.p1">
+                I craft responsive, user-focused web apps using <span class="highlight">JavaScript</span>, <span class="highlight">React</span>, <span class="highlight">Next.js</span>, <span class="highlight">Node.js</span>, <span class="highlight">Express</span>, and <span class="highlight">TailwindCSS</span>, always aiming for clean architecture, accessibility, and smooth user experiences.
+              </p>
+              <p class="text-base leading-relaxed" data-i18n="about.p3">
+                Off the clock, I’m either playing tennis, running trails, or trying to code while my pets provide “unexpected input” on my projects.
+              </p>
+              
+              <!-- Tech Stack Section -->
+              <div class="mt-4">
+                <h2 class="text-lg font-semibold mb-4" data-i18n="about.techTitle">Tech Stack</h2>
+                <div class="tech-stack-container">
+                  <div class="tech-stack-scroll">
+                    <div class="tech-item" data-tech="html">
+                      <i class="fab fa-html5"></i>
+                      <span>HTML</span>
+                    </div>
+                    <div class="tech-item" data-tech="css">
+                      <i class="fab fa-css3-alt"></i>
+                      <span>CSS</span>
+                    </div>
+                    <div class="tech-item" data-tech="javascript">
+                      <i class="fab fa-js-square"></i>
+                      <span>JavaScript</span>
+                    </div>
+                    <div class="tech-item" data-tech="react">
+                      <i class="fab fa-react"></i>
+                      <span>React</span>
+                    </div>
+                    <div class="tech-item" data-tech="nextjs">
+                      <i class="devicon-nextjs-plain"></i>
+                      <span>Next.js</span>
+                    </div>
+                    <div class="tech-item" data-tech="nodejs">
+                      <i class="devicon-nodejs-plain"></i>
+                      <span>Node.js</span>
+                    </div>
+                    <div class="tech-item" data-tech="express">
+                      <i class="devicon-express-original"></i>
+                      <span>Express</span>
+                    </div>
+                    <div class="tech-item" data-tech="tailwind">
+                      <i class="devicon-tailwindcss-original"></i>
+                      <span>TailwindCSS</span>
+                    </div>
+                    <div class="tech-item" data-tech="git">
+                      <i class="fab fa-git-alt"></i>
+                      <span>Git / GitHub</span>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Projects Section -->
+          <section id="projects" class="content-section hidden w-full">
+            <div class="flex flex-col gap-6">
+              
+              <!-- Project Card 1 -->
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="./public/assets/projects/git-peek.png" alt="GitPeek project screenshot" />
+                </div>
+                <div class="project-content">
+                  <div class="project-header">
+                    <h3 class="project-title" data-i18n="projects.gitpeek.title">GitPeek</h3>
+                    <div class="project-links">
+                      <a href="https://github.com/monicacoding/git-peek" target="_blank" aria-label="View GitHub repository">
+                        <i class="fab fa-github"></i>
+                      </a>
+                      <a href="https://git-peek-monicacoding.vercel.app/" target="_blank" aria-label="View live demo">
+                        <i class="fa-solid fa-globe"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="project-tags">
+                  <span class="project-tag" data-i18n="projects.gitpeek.tag.html">HTML</span>
+                  <span class="project-tag" data-i18n="projects.gitpeek.tag.css">CSS</span>
+                  <span class="project-tag" data-i18n="projects.gitpeek.tag.js">JavaScript</span>
+                  <span class="project-tag" data-i18n="projects.gitpeek.tag.api">GitHub API</span>
+                  </div>
+                  <p class="project-description" data-i18n="projects.gitpeek.description">
+                    Web application for quickly visualizing GitHub user profiles and repositories.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Project Card 2 -->
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="./public/assets/projects/text-to-speech.png" alt="Text to Speech project screenshot" />
+                </div>
+                <div class="project-content">
+                  <div class="project-header">
+                    <h3 class="project-title" data-i18n="projects.tts.title">Text to Speech</h3>
+                    <div class="project-links">
+                      <a href="https://github.com/monicacoding/text-to-speech" target="_blank" aria-label="View GitHub repository">
+                        <i class="fab fa-github"></i>
+                      </a>
+                      <a href="https://text-to-speech-monicacoding.vercel.app/" target="_blank" aria-label="View live demo">
+                        <i class="fa-solid fa-globe"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="project-tags">
+                  <span class="project-tag" data-i18n="projects.tts.tag.html">HTML</span>
+                  <span class="project-tag" data-i18n="projects.tts.tag.css">CSS</span>
+                  <span class="project-tag" data-i18n="projects.tts.tag.js">JavaScript</span>
+                  <span class="project-tag" data-i18n="projects.tts.tag.api">Speech Synthesis API</span>
+                  </div>
+                  <p class="project-description" data-i18n="projects.tts.description">
+                    Converts user-inputted text into spoken words using the browser's built-in Speech Synthesis API.
+                  </p>
+                </div>
+              </div>
+              
+            </div>
+          </section>
+          
+          <section id="experience" class="content-section hidden w-full">
+            <div class="flex flex-col gap-6">
+              
+              <!-- Experience Resume Button -->
+              <div class="experience-section-actions">
+                <a href="./public/assets/resume.pdf" target="_blank" class="experience-section-resume" aria-label="Download resume (PDF)">
+                  <i class="fa-solid fa-download"></i>
+                  <span>Resume</span>
+                </a>
+              </div>
+              
+              <!-- Experience Item 1 -->
+              <div class="experience-item">
+                <div class="experience-header">
+                  <div class="experience-title-section">
+                    <h3 class="experience-title" data-i18n="experience.item1.title">Project Management Office Analyst</h3>
+                    <p class="experience-company" data-i18n="experience.item1.company">Teleperformance Portugal SA</p>
+                  </div>
+                  <div class="experience-meta">
+                    <p class="experience-date" data-i18n="experience.item1.date">January 2025 — Present</p>
+                    <p class="experience-location" data-i18n="experience.item1.location">Lisbon, Portugal</p>
+                  </div>
+                </div>
+                <p class="experience-description" data-i18n="experience.item1.description">
+                  Part of Microsoft’s Partners Process Excellence team, supporting project tracking, risk identification, and process improvements. Manage workflows, coordinate communication, and introduce efficiency initiatives. Contribute to AI-driven process automation through Copilot Studio. Produce analysis and reporting to guide data-driven decision-making and ensure successful project delivery.
+                </p>
+                <div class="experience-tags">
+                  <span class="experience-tag">Project Management</span>
+                  <span class="experience-tag">Operations Process Improvement</span>
+                  <span class="experience-tag">Data Analysis</span>
+                  <span class="experience-tag">Microsoft 365</span>
+                  <span class="experience-tag">Microsoft Copilot Studio</span>
+                  <span class="experience-tag">Reporting</span>
+                  <span class="experience-tag">Stakeholder Engagement</span>
+                </div>
+              </div>
+
+              <!-- Experience Item 2 -->
+              <div class="experience-item">
+                <div class="experience-header">
+                  <div class="experience-title-section">
+                    <h3 class="experience-title" data-i18n="experience.item2.title">Operational Trainer</h3>
+                    <p class="experience-company" data-i18n="experience.item2.company">Teleperformance Portugal SA</p>
+                  </div>
+                  <div class="experience-meta">
+                    <p class="experience-date" data-i18n="experience.item2.date">May 2021 — January 2025</p>
+                    <p class="experience-location" data-i18n="experience.item2.location">Lisbon, Portugal</p>
+                  </div>
+                </div>
+                <p class="experience-description" data-i18n="experience.item2.description">
+                  Deliver training and create learning materials for Microsoft’s Partners training department. Leverage SAP SuccessFactors, Microsoft Excel, and Power BI to track and report performance data. Support team operations and serve as backup Training Manager, collaborating closely with leadership and high-level stakeholders.
+                </p>
+                <div class="experience-tags">
+                  <span class="experience-tag">Training Delivery</span>
+                  <span class="experience-tag">Team Management</span>
+                  <span class="experience-tag">Microsoft 365</span>
+                  <span class="experience-tag">Microsoft Power BI</span>
+                  <span class="experience-tag">SAP SuccessFactors</span>
+                </div>
+              </div>
+
+              <!-- Experience Item 3 -->
+              <div class="experience-item">
+                <div class="experience-header">
+                  <div class="experience-title-section">
+                    <h3 class="experience-title" data-i18n="experience.item3.title">Operations Customer Expert</h3>
+                    <p class="experience-company" data-i18n="experience.item3.company">Teleperformance Portugal SA</p>
+                  </div>
+                  <div class="experience-meta">
+                    <p class="experience-date" data-i18n="experience.item3.date">July 2019 — May 2021</p>
+                    <p class="experience-location" data-i18n="experience.item3.location">Lisbon, Portugal</p>
+                  </div>
+                </div>
+                <p class="experience-description" data-i18n="experience.item3.description">
+                  Provide high-quality customer support, resolving issues, maintaining client satisfaction, and assisting with service-related processes. Support project management tasks and help maintain team efficiency and morale.
+                </p>
+                <div class="experience-tags">
+                  <span class="experience-tag">Customer Service</span>
+                  <span class="experience-tag">Effective Communication</span>
+                  <span class="experience-tag">Problem Solving</span>
+                  <span class="experience-tag">Documentation</span>
+                  <span class="experience-tag">Stakeholder Support</span>
+                </div>
+              </div>
+              
+            </div>
+          </section>
+          
+          <section id="education" class="content-section hidden w-full">
+            <div class="flex flex-col gap-6">
+              
+              <!-- Course Card 1 -->
+              <div class="course-card">
+                <div class="course-logo">
+                  <img src="./public/assets/certifications/harvard.png" alt="Harvard University logo" />
+                </div>
+                <div class="course-content">
+                  <div class="course-header">
+                    <h3 class="course-title" data-i18n="education.course1.title">CS50x: Introduction to Computer Science</h3>
+                    <!--
+                    <a href="#" target="_blank" aria-label="View certificate" class="course-link">
+                      <i class="fa-solid fa-award"></i>
+                      <div class="course-certificate-tooltip">
+                        <img src="./public/assets/certifications/harvard.png" alt="CS50x certificate" />
+                      </div>
+                    </a>
+                    -->
+                  </div>
+                  <p class="course-provider" data-i18n="education.course1.provider">Harvard University</p>
+                  <p class="course-description" data-i18n="education.course1.description">
+                    Harvard's rigorous introduction to computer science focused on algorithms, data structures, and core programming principles. Built multiple hands-on projects that strengthened problem-solving, computational thinking, and writing efficient code.
+                  </p>
+                  <div class="course-tags">
+                    <span class="course-tag">C</span>
+                    <span class="course-tag">Python</span>
+                    <span class="course-tag">SQL</span>
+                    <span class="course-tag">HTML/CSS</span>
+                    <span class="course-tag">JavaScript</span>
+                    <span class="course-tag">Data Structures</span>
+                    <span class="course-tag">Algorithms</span>
+                    <span class="course-tag">Git</span>
+                    <span class="course-tag">Command Line</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Course Card 2 -->
+              <div class="course-card">
+                <div class="course-logo">
+                  <img src="./public/assets/certifications/scrimba.png" alt="Scrimba logo" />
+                </div>
+                <div class="course-content">
+                  <div class="course-header">
+                    <h3 class="course-title" data-i18n="education.course2.title">Fullstack Developer Path</h3>
+                    <!--
+                    <a href="#" target="_blank" aria-label="View certificate" class="course-link">
+                      <i class="fa-solid fa-award"></i>
+                      <div class="course-certificate-tooltip">
+                        <img src="./public/assets/certifications/scrimba-logo.png" alt="Fullstack Developer Path certificate" />
+                      </div>
+                    </a>
+                    -->
+                  </div>
+                  <p class="course-provider" data-i18n="education.course2.provider">Scrimba</p>
+                  <p class="course-description" data-i18n="education.course2.description">
+                    Project-based full-stack program covering modern frontend and backend development. Developed real-world applications with JavaScript, React, and Node.js while learning UI best practices, state management, and API development.
+                  </p>
+                  <div class="course-tags">
+                    <span class="course-tag">HTML/CSS</span>
+                    <span class="course-tag">JavaScript</span>
+                    <span class="course-tag">React</span>
+                    <span class="course-tag">Next.js</span>
+                    <span class="course-tag">Node.js</span>
+                    <span class="course-tag">Express</span>
+                    <span class="course-tag">SQL</span>
+                    <span class="course-tag">TypeScript</span>
+                    <span class="course-tag">REST APIs</span>
+                    <span class="course-tag">Deployment</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Course Card 3 -->
+              <div class="course-card">
+                <div class="course-logo">
+                  <img src="./public/assets/certifications/ztm.png" alt="Udemy logo" />
+                </div>
+                <div class="course-content">
+                  <div class="course-header">
+                    <h3 class="course-title" data-i18n="education.course3.title">The Complete Web Developer in 2025</h3>
+                    <a href="./public/assets/certifications/the-complete-web-developer-zero-to-mastery.pdf" target="_blank" aria-label="View certificate" class="course-link">
+                      <i class="fa-solid fa-award"></i>
+                      <div class="course-certificate-tooltip">
+                        <img src="./public/assets/certifications/the-complete-web-developer-zero-to-mastery.jpg" alt="The Complete Web Developer in 2024 certificate" />
+                      </div>
+                    </a>
+                  </div>
+                  <p class="course-provider" data-i18n="education.course3.provider">Zero to Mastery</p>
+                  <p class="course-description" data-i18n="education.course3.description">
+                    Full-stack bootcamp focused on building production-ready applications. Gained experience creating interactive UIs, backend logic, and database-driven features using modern web technologies and workflows.
+                  </p>
+                  <div class="course-tags">
+                    <span class="course-tag">HTML/CSS</span>
+                    <span class="course-tag">JavaScript</span>
+                    <span class="course-tag">React</span>
+                    <span class="course-tag">Node.js</span>
+                    <span class="course-tag">Express</span>
+                    <span class="course-tag">SQL/NoSQL Databases</span>
+                    <span class="course-tag">Git/GitHub</span>
+                    <span class="course-tag">NPM</span>
+                    <span class="course-tag">APIs</span>
+                    <span class="course-tag">Deployment</span>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </section>
+          
+          <section id="contact" class="content-section hidden w-full">
+            <div class="contact-card">
+              <div class="contact-links">
+                <a href="https://www.linkedin.com/in/monicafariacaires/" target="_blank" class="contact-link">
+                  <i class="fa-brands fa-linkedin"></i>
+                  <span class="contact-link-label">LinkedIn</span>
+                  <span class="contact-link-handle">@monicafariacaires</span>
+                </a>
+                <a href="https://github.com/monicacoding" target="_blank" class="contact-link">
+                  <i class="fa-brands fa-github"></i>
+                  <span class="contact-link-label">GitHub</span>
+                  <span class="contact-link-handle">@monicacoding</span>
+                </a>
+                <a href="https://monicacoding.medium.com/" target="_blank" class="contact-link">
+                  <i class="fa-brands fa-medium"></i>
+                  <span class="contact-link-label">Medium</span>
+                  <span class="contact-link-handle">@monicacoding</span>
+                </a>
+                <a href="https://www.instagram.com/monicacoding" target="_blank" class="contact-link">
+                  <i class="fa-brands fa-instagram"></i>
+                  <span class="contact-link-label">Instagram</span>
+                  <span class="contact-link-handle">@monicacoding</span>
+                </a>
+                <a href="mailto:hello@monicacoding.dev" target="_blank" class="contact-link">
+                  <i class="fa-solid fa-paper-plane"></i>
+                  <span class="contact-link-label">Email</span>
+                  <span class="contact-link-handle">hello@monicacoding.dev</span>
+                </a>
+                <!--
+                  <a href="https://cal.com/monicacoding" target="_blank" class="contact-link">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span class="contact-link-label">Book a Call</span>
+                    <span class="contact-link-handle">cal.com/monicacoding</span>
+                  </a>
+                -->
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+    <!-- JavaScript -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
