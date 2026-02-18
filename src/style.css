@@ -70,8 +70,6 @@ body {
     color 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Apply smooth theme transitions to elements using CSS variables */
-/* Using a more targeted approach for better performance */
 body *,
 body *::before,
 body *::after {
@@ -82,7 +80,6 @@ body *::after {
     box-shadow 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Exclude elements that shouldn't transition or have animations */
 img,
 svg,
 video,
@@ -97,13 +94,11 @@ meter,
   transition: none;
 }
 
-/* Highlight elements - exclude from universal transitions to prevent conflicts */
 .highlight,
 #nameHero {
   transition: none;
 }
 
-/* Elements with existing transitions - combine theme and interaction transitions */
 .nav-link {
   transition: 
     background-color 0.6s cubic-bezier(0.4, 0, 0.2, 1),
@@ -164,7 +159,6 @@ meter,
   -webkit-text-fill-color: rgb(147, 100, 255);
 }
 
-/* #nameHero always has the gradient animation */
 #nameHero {
   background: linear-gradient(135deg, rgb(127, 72, 255) 0%, rgb(147, 100, 255) 25%, rgb(167, 133, 254) 50%, rgb(147, 100, 255) 75%, rgb(127, 72, 255) 100%);
   background-size: 400%;
@@ -175,7 +169,6 @@ meter,
   color: transparent;
 }
 
-/* .highlight elements get gradient on hover */
 .highlight:hover {
   background: linear-gradient(135deg, rgb(127, 72, 255) 0%, rgb(147, 100, 255) 25%, rgb(167, 133, 254) 50%, rgb(147, 100, 255) 75%, rgb(127, 72, 255) 100%);
   background-size: 400%;
@@ -207,7 +200,6 @@ meter,
   cursor: url("/public/assets/marie-kondo.png"), pointer;
 }
 
-/* Theme-aware text colors */
 p {
   color: var(--color-text-secondary);
 }
@@ -216,9 +208,12 @@ p {
    HEADER & SOCIAL LINKS
    ========================================================================== */
 
-/* Social link tooltips */
 .social-link {
   position: relative;
+}
+
+#headerSocialLinksContainer .social-link i {
+  transition: color 0.0s ease;
 }
 
 .social-link::after {
@@ -619,13 +614,15 @@ p {
   margin: 0;
 }
 
-.project-links {
+.project-links,
+.course-links {
   display: flex;
   gap: 12px;
   align-items: center;
 }
 
-.project-links a {
+.project-links a,
+.course-links a {
   color: var(--color-text-muted);
   font-size: 18px;
   transition: color 0.3s ease, transform 0.3s ease;
@@ -634,7 +631,8 @@ p {
   justify-content: center;
 }
 
-.project-links a:hover {
+.project-links a:hover,
+.course-links a:hover {
   color: var(--color-hover);
   transform: translateY(-2px);
 }
@@ -669,7 +667,7 @@ p {
 }
 
 /* ==========================================================================
-   EDUCATION COURSE CARDS
+   EDUCATION CARDS
    ========================================================================== */
 
 .course-card {
@@ -1104,6 +1102,11 @@ p {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+
+  .nav-wrapper {
+    position: relative;
+    flex: 0 0 auto;
+  }
   
   .nav-toggle {
     display: inline-flex;
@@ -1113,8 +1116,10 @@ p {
     display: none;
     position: absolute;
     top: 100%;
-    right: 0;
+    left: 0;
+    right: auto;
     margin-top: 0.5rem;
+    width: max-content;
     flex-direction: column;
     align-items: flex-start;
     gap: 4px;
