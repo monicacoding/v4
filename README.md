@@ -1,6 +1,6 @@
 # <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=600&size=36&letterSpacing=0.2rem&duration=1500&pause=2000&color=8075FF&vCenter=true&width=435&lines=Overview" alt="Typing SVG" /></a>
 
-A modern portfolio website showcasing my work as a Full-Stack Developer. Built with a focus on clean architecture, accessibility, and user experience. It features a custom theme system, smooth animations, and a fully responsive design that works seamlessly across all devices.
+A modern portfolio website showcasing my work as a Software Developer. Built with a focus on clean architecture, accessibility, and user experience. It features a custom theme system, smooth animations, and a fully responsive design that works seamlessly across all devices.
 
 ![Portfolio Website](public/assets/portfolio-website.jpg)
 
